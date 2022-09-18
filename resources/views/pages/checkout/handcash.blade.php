@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout_not_slider')
 @section('content')
 
 <section id="cart_items">

@@ -679,6 +679,7 @@
                         window.setTimeout(function() {
                             location.reload();
                         }, 8000);
+                        window.location.href = "{{url('/handcash')}}";
                     }else {
                         swal({
                                 title: "Thông tin còn trống",
@@ -686,6 +687,7 @@
                                 type: "error",
                                 confirmButtonClass: "btn-danger",
                                 cancelButtonText: "Đóng",
+                                closeOnConfirm: false,
                                 closeOnCancel: false
                             });
                             

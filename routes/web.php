@@ -189,6 +189,7 @@ Route::get('/payment','App\Http\Controllers\CheckoutController@payment');
 Route::post('/save-checkout-customer','App\Http\Controllers\CheckoutController@save_checkout_customer');
 Route::post('/select-delivery-home','App\Http\Controllers\CheckoutController@select_delivery_home');
 Route::post('/confirm-order','App\Http\Controllers\CheckoutController@confirm_order');
+Route::get('/handcash','App\Http\Controllers\CheckoutController@handcash');
 
 //Order
 Route::get('/manage-order','App\Http\Controllers\OrderController@manage_order');

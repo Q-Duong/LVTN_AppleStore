@@ -236,8 +236,15 @@ class CheckoutController extends Controller
         
         Session::forget('coupon');
         Session::forget('cart');
+        
    }
 
+   public function handcash(){
+    $category_post = CategoryPost::where('category_post_status','1')->orderBy('category_post_id','ASC')->get();
+
+    $cate_product = CategoryProduct::where('category_product_status','1')->orderby('category_product_id','ASC')->get();
+    return view('pages.checkout.handcash')->with('category',$cate_product)->with('category_post',$category_post);
+   }
    //Validation
    public function checkOrder(Request $request){
     $this-> validate($request,
