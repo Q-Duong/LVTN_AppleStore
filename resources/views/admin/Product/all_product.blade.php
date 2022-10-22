@@ -34,7 +34,7 @@
                         <td>{{ $pro -> product_id }}</td>
                         <td>{{ $pro -> product_name }}</td>
                         <td>{{ $pro->product_quantity }}</td>
-                        <td><img class="img-fluid" src="public/uploads/product/{{ $pro -> product_image }}" alt=""></td>
+                        <td><img class="img-fluid" src="uploads/product/{{ $pro -> product_image }}" alt=""></td>
                         <td><a href="{{URL::to('/add-gallery/'.$pro -> product_id)}}">Thư viện ảnh</a></td>
                         <td>{{number_format($pro -> product_cost,0,',','.')}}₫</td>
                         <td>{{number_format($pro -> product_price,0,',','.')}}₫</td>

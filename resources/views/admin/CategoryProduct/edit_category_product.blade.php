@@ -49,7 +49,7 @@
                             <label for="exampleInputEmail1">Hình ảnh danh mục</label>
                             <input type="file" name="category_product_image" class="form-control" >
                             <img class="img-fluid"
-                                src="{{asset('public/uploads/categoryproduct/'.$edit_value->category_product_image)}}" alt="">
+                                src="{{asset('uploads/categoryproduct/'.$edit_value->category_product_image)}}" alt="">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Hiển thị</label>

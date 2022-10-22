@@ -36,7 +36,7 @@
                         <td>{{$cate_pro -> category_product_name}}</td>
                         <td>{{ $cate_pro->category_product_slug }}</td>
                         <td><img class="img-category-product"
-                                src="public/uploads/categoryproduct/{{ $cate_pro -> category_product_image }}" alt="">
+                                src="uploads/categoryproduct/{{ $cate_pro -> category_product_image }}" alt="">
                         </td>
                         <!-- <td>
                             @if($cate_pro -> category_product_parent == 0)

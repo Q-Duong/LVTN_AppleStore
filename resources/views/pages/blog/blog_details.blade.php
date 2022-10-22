@@ -26,7 +26,7 @@
         @foreach($post as $key => $pst)
             <div class="col-lg-12">
                 <div class="blog__details__pic">
-                    <img src="{{asset('public/uploads/post/'.$pst->post_image)}}" alt="">
+                    <img src="{{asset('uploads/post/'.$pst->post_image)}}" alt="">
                 </div>
             </div>
             <div class="col-lg-8">
@@ -89,7 +89,7 @@
                 <div class="blog__item">
                     <a href="{{URL::to('/blog/'.$post_ralated->post_slug)}}">
                         <div class="blog__item__pic set-bg"
-                            data-setbg="{{asset('public/uploads/post/'.$post_ralated->post_image)}}"></div>
+                            data-setbg="{{asset('uploads/post/'.$post_ralated->post_image)}}"></div>
                         <div class="blog__item__text">
                             <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
                             <h5>{{$post_ralated->post_title}}</h5>

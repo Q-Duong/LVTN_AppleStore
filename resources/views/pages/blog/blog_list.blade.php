@@ -37,7 +37,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog__item">
                     <!-- <div class="blog__item__pic set-bg"
-                            data-setbg="{{asset('public/frontend/img/hero_homepod_lockup__4j6sxrq610y2_large.jpg')}}"></div> -->
+                            data-setbg="{{asset('frontend/img/hero_homepod_lockup__4j6sxrq610y2_large.jpg')}}"></div> -->
                     <div class="blog__item__text">
                         <span><img src="img/icon/calendar.png" alt="">-------------------</span>
                         <h5>{{$cpst->category_post_name}}</h5>

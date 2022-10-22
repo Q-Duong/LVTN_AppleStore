@@ -46,7 +46,7 @@
                             @else
                                 <div class="avata">
                                     <img class="inbox-avatar"
-                                        src="{{asset('public/uploads/avata/'.$customer->customer_image)}}" alt=""
+                                        src="{{asset('uploads/avata/'.$customer->customer_image)}}" alt=""
                                         name="customer_image">
                                 </div>
                                 <div class="option">

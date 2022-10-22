@@ -14,19 +14,19 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="{{asset('public/frontend/css/bootstrap.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/font-awesome.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/elegant-icons.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/magnific-popup.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/nice-select.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/owl.carousel.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/slicknav.min.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/style.css')}}" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/sweetalert.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/fontawesome-free-5.15.4-web/css/all.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/lightgallery.min.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/lightslider.css')}}">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/prettify.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/elegant-icons.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/magnific-popup.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/nice-select.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/slicknav.min.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/sweetalert.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/fontawesome-free-5.15.4-web/css/all.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/lightgallery.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/lightslider.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/prettify.css')}}">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
             <div class="offcanvas__top__hover">
                 <span>
                 @if(Session::get('customer_image')!='' && Session::get('customer_password')!='')
-                    <img src="{{asset('public/uploads/avata/'.Session::get('customer_image'))}}" alt="">
+                    <img src="{{asset('uploads/avata/'.Session::get('customer_image'))}}" alt="">
                 @elseif(Session::get('customer_password')=='')
                     <img src="{{Session::get('customer_image')}}" alt="">
                 @elseif(Session::get('customer_image')=='' && Session::get('customer_password')!='')
@@ -85,10 +85,10 @@
             @endif
         </div>
         <div class="offcanvas__nav__option">
-            <a href="#" class="search-switch"><img src="{{asset('public/frontend/img/icon/search.png')}}" alt=""></a>
-            <a href="{{URL::to('/wistlist')}}"><img src="{{asset('public/frontend/img/icon/heart.png')}}" alt=""></a>
+            <a href="#" class="search-switch"><img src="{{asset('frontend/img/icon/search.png')}}" alt=""></a>
+            <a href="{{URL::to('/wistlist')}}"><img src="{{asset('frontend/img/icon/heart.png')}}" alt=""></a>
             <a href="{{URL::to('/cart')}}">
-                <img src="{{asset('public/frontend/img/icon/cart.png')}}" alt="">
+                <img src="{{asset('frontend/img/icon/cart.png')}}" alt="">
                 <div class="count-cart-products"></div>
             </a>
         </div>
@@ -120,7 +120,7 @@
                             <div class="header__top__hover">
                                 <span>
                                 @if(Session::get('customer_image')!='' && Session::get('customer_password')!='')
-                                    <img src="{{asset('public/uploads/avata/'.Session::get('customer_image'))}}" alt="">
+                                    <img src="{{asset('uploads/avata/'.Session::get('customer_image'))}}" alt="">
                                 @elseif(Session::get('customer_password')=='')
                                     <img src="{{Session::get('customer_image')}}" alt="">
                                 @elseif(Session::get('customer_image')=='' && Session::get('customer_password')!='')
@@ -201,10 +201,10 @@
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="header__nav__option">
-                            <a href="#" class="search-switch"><img src="{{asset('public/frontend/img/icon/search.png')}}" alt=""></a>
-                            <a href="{{URL::to('/wistlist')}}"><img src="{{asset('public/frontend/img/icon/heart.png')}}" alt=""></a>
+                            <a href="#" class="search-switch"><img src="{{asset('frontend/img/icon/search.png')}}" alt=""></a>
+                            <a href="{{URL::to('/wistlist')}}"><img src="{{asset('frontend/img/icon/heart.png')}}" alt=""></a>
                             <a href="{{URL::to('/cart')}}">
-                                <img src="{{asset('public/frontend/img/icon/cart.png')}}" alt="">
+                                <img src="{{asset('frontend/img/icon/cart.png')}}" alt="">
                                 <div class="count-cart-products"></div>
                                 
                             </a>
@@ -222,7 +222,7 @@
         <section id="a" class="hero">
             <div class="hero__slider owl-carousel">
             @foreach($slider as $key => $slide)
-                <div class="hero__items set-bg active" data-setbg="{{asset('public/uploads/slider/'.$slide->slider_image)}}">
+                <div class="hero__items set-bg active" data-setbg="{{asset('uploads/slider/'.$slide->slider_image)}}">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-5 col-lg-7 col-md-8">
@@ -247,7 +247,7 @@
         <!-- <section class="hero">
             <div class="hero-product">
             @foreach($slider as $key => $slide)
-                <div class="hero__items set-bg active" data-setbg="{{asset('public/uploads/slider/'.$slide->slider_image)}}">
+                <div class="hero__items set-bg active" data-setbg="{{asset('uploads/slider/'.$slide->slider_image)}}">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-5 col-lg-7 col-md-8">
@@ -329,7 +329,7 @@
                         @foreach($category as $key => $cate)
                             <a href="{{URL::to('/store')}}">
                                 <div class="instagram__pic__item set-bg"
-                                        data-setbg="{{asset('public/uploads/categoryproduct/'.$cate->category_product_image)}}">
+                                        data-setbg="{{asset('uploads/categoryproduct/'.$cate->category_product_image)}}">
                                 </div>      
                             </a>    
                         @endforeach
@@ -359,7 +359,7 @@
                             <span>Store Online</span>
                         </div>
                         <p>Khách hàng là trọng tâm của mô hình kinh doanh độc đáo của chúng tôi, bao gồm cả thiết kế.</p>
-                        <a href="#"><img src="{{asset('public/frontend/img/payment.png')}}" alt=""></a>
+                        <a href="#"><img src="{{asset('frontend/img/payment.png')}}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -417,7 +417,7 @@
                 <div class="col-lg-6 d-none d-lg-block footer__img"></div>
                 <div class="col-5 col-lg-2">
                     <div class="footer__img">
-                        <img src="{{asset('public/frontend/img/logoSaleNoti.png')}}" class="img_logo_footer">
+                        <img src="{{asset('frontend/img/logoSaleNoti.png')}}" class="img_logo_footer">
                     </div>
                 </div>
             </div>    
@@ -432,7 +432,7 @@
             <form action="{{URL::to('/search')}}" method="POST" autocomplete="off" class="search-model-form">
                 {{csrf_field()}}
                 <div class="input_container">
-                    <img src="{{asset('public/frontend/img/icon/search-icon.svg')}}" class="input_img">
+                    <img src="{{asset('frontend/img/icon/search-icon.svg')}}" class="input_img">
                     <input type="text" id="keywords" id="search-input" name="keywords_submit" placeholder="Tìm kiếm sản phẩm" class="input">
                     <div class="search-close-switch">+</div>
                 </div>
@@ -451,24 +451,24 @@
     <!-- scrollUp End -->
 
     <!-- Js Plugins -->
-    <script src="{{asset('public/frontend/js/jquery-3.3.1.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
     {{-- <script src="{{asset('public/frontend/js/jquery.nice-select.min.js')}}"></script> --}}
-    <script src="{{asset('public/frontend/js/jquery.nicescroll.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/jquery.magnific-popup.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/jquery.countdown.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/jquery.slicknav.js')}}"></script>
-    <script src="{{asset('public/frontend/js/mixitup.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/main.js')}}"></script>
-    <script src="{{asset('public/frontend/js/sweetalert.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/lightgallery-all.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/lightslider.js')}}"></script>
-    <script src="{{asset('public/frontend/js/prettify.js')}}"></script>
-    <script src="{{asset('public/frontend/js/jquery.scrollUp.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/delete_wistlists.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/add_wistlists.min.js')}}"></script>
-    <script src="{{asset('public/frontend/js/apple.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.nicescroll.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.countdown.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.slicknav.js')}}"></script>
+    <script src="{{asset('frontend/js/mixitup.min.js')}}"></script>
+    <script src="{{asset('frontend/js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('frontend/js/main.js')}}"></script>
+    <script src="{{asset('frontend/js/sweetalert.min.js')}}"></script>
+    <script src="{{asset('frontend/js/lightgallery-all.min.js')}}"></script>
+    <script src="{{asset('frontend/js/lightslider.js')}}"></script>
+    <script src="{{asset('frontend/js/prettify.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.scrollUp.min.js')}}"></script>
+    <script src="{{asset('frontend/js/delete_wistlists.min.js')}}"></script>
+    <script src="{{asset('frontend/js/add_wistlists.min.js')}}"></script>
+    <script src="{{asset('frontend/js/apple.min.js')}}"></script>
 
     <script type="text/javascript">
         $('.nav-item').on('click',function(){

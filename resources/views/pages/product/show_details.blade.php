@@ -21,9 +21,9 @@
                     <ul id="imageGallery">
                         @foreach($gallery as $key => $gal)
                         <li style="width:100%; margin:auto; "
-                            data-thumb="{{asset('public/uploads/gallery/'.$gal->gallery_image)}}"
-                            data-src="{{asset('public/uploads/gallery/'.$gal->gallery_image)}}">
-                            <img width="100%" src="{{asset('public/uploads/gallery/'.$gal->gallery_image)}}"
+                            data-thumb="{{asset('uploads/gallery/'.$gal->gallery_image)}}"
+                            data-src="{{asset('uploads/gallery/'.$gal->gallery_image)}}">
+                            <img width="100%" src="{{asset('uploads/gallery/'.$gal->gallery_image)}}"
                                 alt="{{$gal->gallery_name}}" />
                         </li>
                         @endforeach
@@ -109,7 +109,7 @@
                                     class="cart_product_price_{{$value->product_id}}">
 
                                 <img id="wishlist_productimage{{$value->product_id}}"
-                                    src="{{URL::to('public/uploads/product/'.$value->product_image)}}"
+                                    src="{{URL::to('uploads/product/'.$value->product_image)}}"
                                     style="display:none;" />
 
                                 <input type="hidden" value="1" class="cart_product_qty_{{$value->product_id}}">
@@ -132,7 +132,7 @@
                                 </div>
                                 <div class="product__details__last__option">
                                     <h5><span>Phương thức thanh toán</span></h5>
-                                    <img src="{{asset('public/frontend/img/shop-details/details-payment.png')}}" alt="">
+                                    <img src="{{asset('frontend/img/shop-details/details-payment.png')}}" alt="">
                                     {{-- <ul>
                                         <li><span>Danh mục:</span> {{$value->category_product_name}}</li>
                                         <li><span>Mã sản phẩm:</span> {{$value->product_id}}</li>
@@ -251,7 +251,7 @@
                     <a id="wishlist_producturl{{$lienquan->product_id}}"
                         href="{{URL::to('/product/'.$lienquan->product_slug)}}">
                         <div class="product__item__pic set-bg"
-                            data-setbg="{{URL::to('public/uploads/product/'.$lienquan->product_image)}}">
+                            data-setbg="{{URL::to('uploads/product/'.$lienquan->product_image)}}">
                             @if($lienquan->product_status==2)
                             <span class="label">
                                 Mới
@@ -281,7 +281,7 @@
                             value="{{number_format($lienquan->product_price,0,',','.')}}₫">
 
                         <img id="wishlist_productimage{{$lienquan->product_id}}"
-                            src="{{URL::to('public/uploads/product/'.$lienquan->product_image)}}"
+                            src="{{URL::to('uploads/product/'.$lienquan->product_image)}}"
                             style="display:none;" />
 
                     <div class="product__item__text">

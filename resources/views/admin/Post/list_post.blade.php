@@ -31,7 +31,7 @@
                     <tr>
                         <td>{{ $post -> post_title }}</td>
                         <td>{{ $post -> post_slug }}</td>
-                        <td><img class="img-fluid" src="{{asset('public/uploads/post/'.$post -> post_image)}}" alt="">
+                        <td><img class="img-fluid" src="{{asset('uploads/post/'.$post -> post_image)}}" alt="">
                         </td>
                         <td>{{ $post -> category_post -> category_post_name}}</td>
                         <td>

@@ -22,7 +22,7 @@
     @foreach($category as $key => $cate)
         <a href="{{asset(URL::to('/product-list/'.$cate->category_product_slug))}}">
             <div class="category_product_item">
-                <img width="100%" src="{{asset('public/uploads/categoryproduct/'.$cate->category_product_image)}}">
+                <img width="100%" src="{{asset('uploads/categoryproduct/'.$cate->category_product_image)}}">
                 <p>
                     {{$cate->category_product_name}}
                 </p>
@@ -56,7 +56,7 @@
                         <div class="product__item">
                             <a id="wishlist_producturl{{$product->product_id}}" href="{{URL::to('/product/'.$product->product_slug)}}">
                                 <div class="product__item__pic set-bg"
-                                    data-setbg="{{URL::to('public/uploads/product/'.$product->product_image)}}">
+                                    data-setbg="{{URL::to('uploads/product/'.$product->product_image)}}">
                                     @if($product->product_status==2)
                                     <span class="label">
                                         Mới
@@ -98,7 +98,7 @@
                                     class="cart_product_price_{{$product->product_id}}">
 
                                 <img id="wishlist_productimage{{$product->product_id}}"
-                                    src="{{URL::to('public/uploads/product/'.$product->product_image)}}"
+                                    src="{{URL::to('uploads/product/'.$product->product_image)}}"
                                     style="display:none;" />
 
                                 <input type="hidden" value="1" class="cart_product_qty_{{$product->product_id}}">

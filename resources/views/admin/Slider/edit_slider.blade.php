@@ -23,7 +23,7 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Hình ảnh</label>
                             <input type="file" name="slider_image" class="form-control" id="exampleInputEmail1">
-                            <img class="img-fluid" src="{{asset('public/uploads/slider/'.$slider->slider_image)}}"
+                            <img class="img-fluid" src="{{asset('uploads/slider/'.$slider->slider_image)}}"
                                 alt="">
                         </div>
                         <div class="form-group">

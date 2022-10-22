@@ -22,7 +22,7 @@
     @foreach($category as $key => $cate)
         <a href="{{asset(URL::to('/product-list/'.$cate->category_product_slug))}}">
             <div class="category_product_item">
-                <img width="100%" src="{{asset('public/uploads/categoryproduct/'.$cate->category_product_image)}}">
+                <img width="100%" src="{{asset('uploads/categoryproduct/'.$cate->category_product_image)}}">
                 <p>
                     {{$cate->category_product_name}}
                 </p>
@@ -88,7 +88,7 @@
                         <div class="product__item">
                             <a id="wishlist_producturl{{$product->product_id}}" href="{{URL::to('/product/'.$product->product_slug)}}">
                                 <div class="product__item__pic set-bg"
-                                    data-setbg="{{URL::to('public/uploads/product/'.$product->product_image)}}">
+                                    data-setbg="{{URL::to('uploads/product/'.$product->product_image)}}">
                                     @if($product->product_status==2)
                                     <span class="label">
                                         Mới
@@ -110,13 +110,13 @@
                                     <!-- <ul class="product__hover">
                                         <li><a type="button" id="{{$product->product_id}}"
                                                 onclick="add_wistlist(this.id);"><img
-                                                    src="{{asset('public/frontend/img/icon/heart.png')}}" alt=""><span>Yêu
+                                                    src="{{asset('frontend/img/icon/heart.png')}}" alt=""><span>Yêu
                                                     thích</span></a></li>
-                                        <li><a href="#"><img src="{{asset('public/frontend/img/icon/compare.png')}}" alt="">
+                                        <li><a href="#"><img src="{{asset('frontend/img/icon/compare.png')}}" alt="">
                                                 <span>So sánh</span></a></li>
                                         <li><a id="wishlist_producturl{{$product->product_id}}"
                                                 href="{{URL::to('/chi-tiet-san-pham/'.$product->product_slug)}}"><img
-                                                    src="{{asset('public/frontend/img/icon/search.png')}}"
+                                                    src="{{asset('frontend/img/icon/search.png')}}"
                                                     alt=""></a><span>Xem sản phẩm</span></li>
                                     </ul> -->
                                 </div>
@@ -133,7 +133,7 @@
                                     value="{{number_format($product->product_price,0,',','.')}}₫">
 
                                 <img id="wishlist_productimage{{$product->product_id}}"
-                                    src="{{URL::to('public/uploads/product/'.$product->product_image)}}"
+                                    src="{{URL::to('uploads/product/'.$product->product_image)}}"
                                     style="display:none;" />
 
                             <div class="product__item__text">

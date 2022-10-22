@@ -58,7 +58,7 @@ $total = 0;
                                 <td class="product__cart__item">
                                     <a href="{{URL::to('/product/'.$cart['product_slug'])}}">
                                         <div class="product__cart__item__pic">
-                                            <img src="{{asset('public/uploads/product/'.$cart['product_image'])}}"
+                                            <img src="{{asset('uploads/product/'.$cart['product_image'])}}"
                                                 width="90" alt="{{$cart['product_name']}}">
                                         </div>
                                         <div class="product__cart__item__text">

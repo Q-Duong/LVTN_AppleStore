@@ -30,7 +30,7 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Hình ảnh bài viết</label>
                             <input type="file" name="post_image" class="form-control">
-                            <img class="img-fluid" src="{{asset('public/uploads/post/'.$post->post_image)}}"
+                            <img class="img-fluid" src="{{asset('uploads/post/'.$post->post_image)}}"
                                 alt="">
                         </div>
                         <div class="form-group {{ $errors->has('post_desc') ? 'has-error' : ''}}">

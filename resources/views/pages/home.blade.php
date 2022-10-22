@@ -8,7 +8,7 @@
     @foreach($category as $key => $cate)
     <a href="{{asset(URL::to('/product-list/'.$cate->category_product_slug))}}">
         <div class="category_product_item">
-            <img width="100%" src="{{asset('public/uploads/categoryproduct/'.$cate->category_product_image)}}">
+            <img width="100%" src="{{asset('uploads/categoryproduct/'.$cate->category_product_image)}}">
             <p>
                 {{$cate->category_product_name}}
             </p>
@@ -34,7 +34,7 @@
         <div class="product__item">
             <a id="wishlist_producturl{{$product->product_id}}" href="{{URL::to('/product/'.$product->product_slug)}}">
                 <div class="product__item__pic set-bg"
-                    data-setbg="{{URL::to('public/uploads/product/'.$product->product_image)}}">
+                    data-setbg="{{URL::to('uploads/product/'.$product->product_image)}}">
 
                     @if($product->product_status==2)
                     <span class="label">
@@ -65,7 +65,7 @@
                     value="{{number_format($product->product_price,0,',','.')}}₫">
                 
                 <img id="wishlist_productimage{{$product->product_id}}"
-                    src="{{URL::to('public/uploads/product/'.$product->product_image)}}" style="display:none;" />
+                    src="{{URL::to('uploads/product/'.$product->product_image)}}" style="display:none;" />
 
             <div class="product__item__text">
                 <h6>{{$product->product_name}}</h6>
@@ -103,7 +103,7 @@
         <div class="product__item">
             <a id="wishlist_producturl{{$product->product_id}}" href="{{URL::to('/product/'.$product->product_slug)}}">
                 <div class="product__item__pic set-bg"
-                    data-setbg="{{URL::to('public/uploads/product/'.$product->product_image)}}">
+                    data-setbg="{{URL::to('uploads/product/'.$product->product_image)}}">
                     @if($product->product_status==2)
                     <span class="label">
                         Mới
@@ -125,7 +125,7 @@
                     value="{{number_format($product->product_price,0,',','.')}}₫">
 
                 <img id="wishlist_productimage{{$product->product_id}}"
-                    src="{{URL::to('public/uploads/product/'.$product->product_image)}}" style="display:none;" />
+                    src="{{URL::to('uploads/product/'.$product->product_image)}}" style="display:none;" />
 
                 <div class="product__item__text">
                     <h6>{{$product->product_name}}</h6>
@@ -159,7 +159,7 @@
     @foreach($all_post as $key => $all_pst)
     <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix img_pst ">
         <a  href="{{URL::to('/blog/'.$all_pst->post_slug)}}">
-            <img src="{{URL::to('public/uploads/post/'.$all_pst->post_image)}}" class="img_post" alt="">
+            <img src="{{URL::to('uploads/post/'.$all_pst->post_image)}}" class="img_post" alt="">
             <div class="post__item__text">
                 <h5>{{$all_pst->post_title}}</h5>
             </div>

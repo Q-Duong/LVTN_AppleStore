@@ -39,9 +39,9 @@
                 <div class="blog__item">
                     
                         <div class="blog__item__pic set-bg"
-                            data-setbg="{{asset('public/uploads/post/'.$pst->post_image)}}"></div>
+                            data-setbg="{{asset('uploads/post/'.$pst->post_image)}}"></div>
                         <div class="blog__item__text">
-                            <span><img src="{{asset('public/frontend/img/icon/calendar.png')}}" alt=""> 16 February 2020</span>
+                            <span><img src="{{asset('frontend/img/icon/calendar.png')}}" alt=""> 16 February 2020</span>
                             <h5>{{$pst->post_title}}</h5>
                             <a href="{{URL::to('/blog/'.$pst->post_slug)}}">Xem tin</a>
                         </div>

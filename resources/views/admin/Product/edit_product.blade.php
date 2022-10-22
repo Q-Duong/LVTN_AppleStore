@@ -76,7 +76,7 @@
                             <label for="exampleInputEmail1">Hình ảnh sản phẩm</label>
                             <input type="file" name="product_image" class="form-control" id="exampleInputEmail1">
                             <img class="img-fluid"
-                                src="{{asset('public/uploads/product/'.$all_product->product_image)}}" alt="">
+                                src="{{asset('uploads/product/'.$all_product->product_image)}}" alt="">
                         </div>
                         <div class="form-group {{ $errors->has('product_cost') ? 'has-error' : ''}}">
                             <label for="exampleInputEmail1">Giá gốc sản phẩm</label>

@@ -25,7 +25,7 @@
                     <tr>
                         <td>{{ $slider->slider_id }}</td>
                         <td>{{ $slider->slider_name }}</td>
-                        <td><img src="public/uploads/slider/{{ $slider->slider_image }}" height="150" width="520"></td>
+                        <td><img src="uploads/slider/{{ $slider->slider_image }}" height="150" width="520"></td>
                         <td>
                             <textarea rows="4" cols="10">
                             {{ $slider->slider_desc }}

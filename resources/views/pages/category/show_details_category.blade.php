@@ -87,15 +87,15 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="product__item">
                             <div class="product__item__pic set-bg"
-                                data-setbg="{{URL::to('public/uploads/product/'.$product->product_image)}}">
+                                data-setbg="{{URL::to('uploads/product/'.$product->product_image)}}">
                                 <span class="label">{{$product->product_status}}</span>
                                 <ul class="product__hover">
-                                    <li><a href="#"><img src="{{asset('public/frontend/img/icon/heart.png')}}"
+                                    <li><a href="#"><img src="{{asset('frontend/img/icon/heart.png')}}"
                                                 alt=""></a></li>
-                                    <li><a href="#"><img src="{{asset('public/frontend/img/icon/compare.png')}}" alt="">
+                                    <li><a href="#"><img src="{{asset('frontend/img/icon/compare.png')}}" alt="">
                                             <span>Compare</span></a></li>
                                     <li><a href="{{URL::to('/chi-tiet-san-pham/'.$product->product_slug)}}"><img
-                                                src="{{asset('public/frontend/img/icon/search.png')}}" alt=""></a>
+                                                src="{{asset('frontend/img/icon/search.png')}}" alt=""></a>
                                     </li>
                                 </ul>
                             </div>

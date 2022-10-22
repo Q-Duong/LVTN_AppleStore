@@ -34,7 +34,7 @@
                 <a id="wishlist_producturl{{$product->product_id}}"
                     href="{{URL::to('/product/'.$product->product_slug)}}">
                     <div class="product__item__pic set-bg"
-                        data-setbg="{{URL::to('public/uploads/product/'.$product->product_image)}}">
+                        data-setbg="{{URL::to('uploads/product/'.$product->product_image)}}">
                         @if($product->product_status==2)
                         <span class="label">
                             Mới
@@ -66,7 +66,7 @@
                         value="{{number_format($product->product_price,0,',','.')}}₫">
 
                     <img id="wishlist_productimage{{$product->product_id}}"
-                        src="{{URL::to('public/uploads/product/'.$product->product_image)}}" style="display:none;" />
+                        src="{{URL::to('uploads/product/'.$product->product_image)}}" style="display:none;" />
 
                     <div class="product__item__text">
                         <h6>{{$product->product_name}}</h6>
